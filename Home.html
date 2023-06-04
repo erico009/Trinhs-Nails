@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.min.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body class="bg-light">
+  <div class="bg-image" 
+    style="background-image: url(http://www.trinhnails.com/wp-content/uploads/2016/01/image_home_main.jpg);
+          height: 100vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;">
+    <div class="container lg">
+      <div class="d-flex">
+        <div class="p-2"><button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-content="Operating Hours: Monday-Friday: 9:30am-7:00pm, Saturday: 9:30am-6pm, Sunday: Closed"><img src="Assets\Open Icon.png" alt="Logo" width="50" height="50"></button></div>
+        <div class="p-2 mx-auto"><a href="Home.html"><img src="Assets\logo_retina-1.png" alt="Logo" width="100" height="66"></a></div>
+        <div class="p-2"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mapModal"><img src="Assets\Map Icon.png" alt="Logo" width="50" height="50"></button></div>
+        <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="ratio ratio-1x1">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2857.5274205601427!2d-76.57250102259673!3d44.257967913105226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ac4b6a277d7f%3A0x4cd6af909bdf482d!2s2557%20Princess%20St%2C%20Kingston%2C%20ON%20K7P%202W8!5e0!3m2!1sen!2sca!4v1685128823450!5m2!1sen!2sca" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-sm">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Book Appointment.html">Book Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Experts.html">Our Experts</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Account</a>
+              <ul class="dropdown-menu bg-secondary">
+                <li>
+                  <div class="form-group form-group-sm m-1">
+                    <input type="email" class="form-control bg-secondary" id="emailform1" placeholder="Email Address">
+                    <input type="password" class="form-control bg-secondary" id="passwordform1"  placeholder="Password">
+                  </div>
+                </li>
+                <li>
+                  <button class="btn m-1 bg-primary" href="...">LogIn</button>
+                  <button class="btn text-muted" href="...">SignUp</button>
+                </li>
+                <li><a class="dropdown-item" href="Appointments.html">Appointments</a></li>
+                <li><a class="dropdown-item" href="My Offers.html">My Offers</a></li>
+                <li><a class="dropdown-item" href="Account Info.html">Account Info</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-main">
+        <div class="row my-5">
+          <h1 class="text-primary">KINGSTON<br>NAIL<br>SALON</h1>
+          <div class="d-flex">
+            <button type="button" class="btn hover" data-bs-toggle="modal" data-bs-target="#mapModal"><img src="Assets\Map Icon.png" alt="Location" width="50" height="50"></button>
+            <button class="btn hover" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHours" aria-expanded="false" aria-controls="collapseHours"><img src="Assets\Open Icon.png" alt="Hours" width="50" height="50"></button>
+            <button class="btn hover" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhone" aria-expanded="false" aria-controls="collapsePhone"><img src="Assets\phone.png" alt="Phone" width="50" height="50"></button>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-4">
+              <div class="collapse" id="collapseHours">
+                <div class="card card-body bg-secondary border-0">
+                  <h3 class="text-center text-dark">Hours</h3>
+                  <table>
+                    <tr>
+                      <td class="text-dark">Monday</td>
+                      <td class="text-end text-dark">9:30am-7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Tuesday</td>
+                      <td class="text-end text-dark">9:30am-7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Wednesday</td>
+                      <td class="text-end text-dark">9:30am-7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Thursday</td>
+                      <td class="text-end text-dark">9:30am-7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Friday</td>
+                      <td class="text-end text-dark">9:30am-7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Saturday</td>
+                      <td class="text-end text-dark">9:30am-6:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Sunday</td>
+                      <td class="text-end text-dark">Closed</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="collapse" id="collapsePhone">
+                <div class="card card-body bg-secondary border-0">
+                  <h3 class="text-center text-dark">Phone</h3>
+                  <a class="text-dark text-center" href="#">
+                    <h2>613 634 6245</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center text-primary">
+          <div class="col-lg-4">
+            <div class="card bg-transparent border-0 hover">
+              <div class="card-body">
+                <h2 class="card-title">Services</h2>
+                <img src="Assets\service.png" alt="service" width="300" height="300">
+                <p class="card-text">Manicures, pedicures, nail polish application, nail repair, waxing, facials.</p>
+                <a href="Services.html" class="btn stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg-transparent border-0 hover">
+              <div class="card-body">
+                <h2 class="card-title">Book Now</h2>
+                <img src="Assets\book.png" alt="book" width="300" height="300">
+                <p class="card-text">Reserve an expert. Or drop by for a walk-in session.</p>
+                <a href="Book Appointment.html" class="btn stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg-transparent border-0 hover">
+              <div class="card-body">
+                <h2 class="card-title">Our Experts</h2>
+                <img src="Assets\team.png" alt="team" width="300" height="300">
+                <p class="card-text">Take a look at our team and their proficiencies.</p>
+                <a href="Experts.html" class="btn stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase text-primary mb-4"><img src="Assets\Map Icon.png" alt="Location" width="40" height="40"> Location</h4>
+                    <p class="lead mb-0">
+                      2557 Princess Street
+                      <br />
+                      (@Cataraqui Town Centre)
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase text-primary mb-4"><img src="Assets\phone.png" alt="Phone" width="40" height="40"> Contact Us</h4>
+                    <p class="lead mb-0">
+                      613 634 6245
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase text-primary mb-4"><img src="Assets\Open Icon.png" alt="Logo" width="40" height="40"> Operating Hours</h4>
+                    <p class="lead mb-0">
+                      Monday-Friday: 9:30am-7:00pm
+                      <br>
+                      Saturday: 9:30am-6pm
+                    </p>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <div class="copyright py-4 text-center text-primary">
+        <div class="container"><small>&copy; 2023 Trinh Nails - Kingston</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
+</body>
+</html>

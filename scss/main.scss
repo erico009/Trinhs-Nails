@@ -1,0 +1,45 @@
+$primary: #ed7985;
+$secondary: #f7dadd;
+$dark: #a90c4f;
+/* $dark: #f74498; */
+$light: #e3dfde;
+@import '../node_modules/bootstrap/scss/bootstrap';
+.container-main {
+  margin-bottom: 2em;
+  min-height: 70%;
+  overflow: auto;
+  padding: 0 2em;
+  text-align: justify;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.hover {
+  transition: transform .2s;
+  transform:scale(.9);
+}
+.hover:hover {
+    transition: transform .2s;
+    transform:scale(1);
+  }
+.hover-fade:hover {
+    background: rgba(247, 218, 221, .5);
+}
+.hover-fade .card-body{
+    opacity: 0;
+  }
+.hover-fade .dropdown-toggle{
+    opacity: 0;
+  }
+.hover-fade:hover .card-title{
+    transform: translate(0px, -5px);
+    text-decoration: underline;
+  }
+.hover-fade:hover .dropdown-toggle{
+    opacity: 1;
+  }
+.hover-fade:hover .card-body{
+    opacity: 1;
+  }
