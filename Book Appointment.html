@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link href="https://erico009.github.io/Trinhs-Nails/css/main.min.css" rel="stylesheet" type="text/css" />
     <title>Book Appointment</title>
 </head>
@@ -299,6 +300,7 @@
         var servicetype = params.get("servicetype");
         $("#servicetype").val(servicetype);
       });
+      //populate services list(would have done this for the services page as well, but reduced list for proof of concept)
       var selectService = document.getElementById("servicetype");
       var optionService = ["Solar Full Set", "Solar Fill", "Pink & White Full Set", "Bio Gel Full Set", "Bio Gel Fill", "U.V. Gel Full Set", "U.V. Gel Fill", "Acrylic Full Set", "Acrylic Fill", "Shellac French", "Shellac Colour", "Manicure French", "Manicure Polish", "Manicure Shellac French", "Manicure Shellac Colour", "Pedicure Manicure Polish", "Pedicure Polish", "Pedicure French", "Pedicure Shellac French", "Pedicure Shellac Colour", "Nail Design", "Airbrush White Design", "Airbrush Colour Design", "Dip nails", "Dip nails - full set", "Dip nails - fill", "Eyelash curling", "Eyelash curling and tinting", "Eyelash Tinting", "Eyelash Ext (Full Set)", "Eyelash Ext (Fill)", "Eyebrows", "Eyebrow Tinting", "Upper Lip", "Chin", "Full Face", "Back", "Armpit", "Full Arm", "Half Arm", "Full Leg", "Half Leg", "Bikini Line", "Brazilian","Facial(30 minutes)","Facial(60 minutes)"]
       for(var i = 0; i < optionService.length; i++) {
