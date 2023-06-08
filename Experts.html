@@ -13,17 +13,80 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;">
-    <div class="container lg">
+    <div class="container">
       <div class="d-flex">
-        <div class="p-2"><button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-content="Operating Hours: Monday-Friday: 9:30am-7:00pm, Saturday: 9:30am-6pm, Sunday: Closed"><img src="Assets\Open Icon.png" alt="Logo" width="50" height="50"></button></div>
-        <div class="p-2 mx-auto"><a href="Home.html"><img src="Assets\logo_retina-1.png" alt="Logo" width="100" height="66"></a></div>
         <div class="p-2"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mapModal"><img src="Assets\Map Icon.png" alt="Logo" width="50" height="50"></button></div>
+        <div class="p-2 mx-auto"><a href="Home.html"><img src="Assets\logo_retina-1.png" alt="Logo" width="100" height="66"></a></div>
+        <div class="p-2"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#phoneModal"><img src="Assets\phone.png" alt="Logo" width="50" height="50"></button></div>
         <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-secondary text-dark">
+              <div class="modal-header">
+                <h2 class="modal-title w-100 text-center">Location</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
               <div class="modal-body">
                 <div class="ratio ratio-1x1">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2857.5274205601427!2d-76.57250102259673!3d44.257967913105226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ac4b6a277d7f%3A0x4cd6af909bdf482d!2s2557%20Princess%20St%2C%20Kingston%2C%20ON%20K7P%202W8!5e0!3m2!1sen!2sca!4v1685128823450!5m2!1sen!2sca" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-secondary text-dark">
+              <div class="modal-header">
+                <h2 class="modal-title w-100 text-center">Phone</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <a class="text-dark text-center" href="#">
+                    <h1 class="mb-5">613 634 6245</h1>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="hoursModal" tabindex="-1" aria-labelledby="hoursModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-secondary text-dark">
+              <div class="modal-header">
+                <h2 class="modal-title w-100 text-center">Hours</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="card card-body bg-secondary border-0">
+                  <table>
+                    <tr>
+                      <td class="text-dark">Monday</td>
+                      <td class="text-end text-dark">9:30am-7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Tuesday</td>
+                      <td class="text-end text-dark">9:30am-7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Wednesday</td>
+                      <td class="text-end text-dark">9:30am-7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Thursday</td>
+                      <td class="text-end text-dark">9:30am-7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Friday</td>
+                      <td class="text-end text-dark">9:30am-7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Saturday</td>
+                      <td class="text-end text-dark">9:30am-6:00pm</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">Sunday</td>
+                      <td class="text-end text-dark">Closed</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
@@ -217,9 +280,5 @@
     </div>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-    </script>
 </body>
 </html>
